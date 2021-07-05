@@ -1,0 +1,92 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #F2F2F2;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1392px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.full-section{
+  background-image: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 32px;
+  padding-bottom: 296px;
+}
+
+
+/* HEADER */
+
+
+.header-section{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 88px;
+}
+
+.header-section__button{
+  width: 24px;
+  height: 18px;
+  background-image: url(../img/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent
+}
+
+.header-section__nav{
+  position: absolute;
+  top: 100%;
+  text-align: center;
+}
+
+.nav-section__list{
+  list-style: none;
+  display: none;
+}
+
+.nav-section__link{
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.142857px;
+  color: #808397;
+}
+
+
+.creative-section{
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
