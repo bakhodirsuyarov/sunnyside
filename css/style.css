@@ -164,15 +164,42 @@ body{
 
 /* FEATURES */
 
+.features{
+  position: relative;
+  z-index: 1;
+}
+
 
 .features-img{
-  margin-left: auto;
-  margin-right: auto;
+  background-size: cover;
   margin-bottom: 64px;
 }
 
 .features-content{
+  margin-top: 376px;
   margin-bottom: 64px;
+}
+
+.features::before{
+  position: absolute;
+  content: "";
+  width: 375px;
+  height: 312px;
+  background-image: url(../img/eage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -377px;
+}
+
+.features::after{
+  position: absolute;
+  content: "";
+  width: 375px;
+  height: 312px;
+  background-image: url(../img/idish.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 340px;
 }
 
 .features-content__heading{
@@ -184,6 +211,7 @@ body{
   margin: 0;
   margin-bottom: 24px;
 }
+
 
 .features-content__text{
   font-family: 'Barlow', sans-serif;
@@ -221,6 +249,69 @@ body{
   left: -9px;
   top: 10px;
 }
+
+
+/* JOBS */
+
+
+.jobs-one{
+  background-image: url(../img/gilos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jobs-one__content{
+  padding: 398px 24px 59px  24px;
+}
+
+
+
+.jobs-one__content-heading{
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #24554A;
+}
+
+.jobs-one__content-text{
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #24554A;
+}
+
+
+.jobs-two{
+  background-image: url(../img/olma.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jobs-two__content{
+  padding: 398px 24px 59px  24px;
+}
+
+.jobs-two__content-heading{
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #052C3B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.jobs-two__content-text{
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #19536C;
+}
+
+
 
 
 @media only screen and (min-width: 660px) {
@@ -284,6 +375,139 @@ body{
     top: 74px;
   }
 
+
+
+
+
+  /* FEATURES */
+
+
+  .features-content{
+    margin-top: 0;
+    padding: 22px 200px 42px 30px;
+    text-align: left;
+  }
+
+  .features-content__heading{
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .features-content__text{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    max-width: 250px;
+    margin-bottom: 18px;
+
+  }
+
+
+  .features::before{
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 250px;
+    background-image: url(../img/eage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 329px;
+    top: 0px;
+  }
+
+  .features-content__link{
+    margin-left: 7px;
+  }
+
+  .btn-content{
+    margin-top: 0;
+    padding: 1px 20px 4px 342px;
+    text-align: left;
+  }
+
+  .btn-heading{
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .btn-text{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    max-width: 250px;
+    margin-bottom: 18px;
+  }
+
+
+  .features::after{
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 250px;
+    background-image: url(../img/idish.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 1px;
+    top: 251px;
+  }
+
+  .features-content{
+    margin-bottom: 0;
+  }
+
+
+
+
+  /* JOBS */
+
+
+  .jobs{
+    display: flex;
+  }
+
+  .jobs-one__content{
+    padding: 200px 24px 40px 24px;
+  }
+
+  .jobs-one__content-heading{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .jobs-one__content-text{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+
+  .jobs-two__content{
+    padding: 200px 24px 40px 24px;
+  }
+
+  .jobs-two__content-heading{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .jobs-two__content-text{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+
+
+
+
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -293,6 +517,24 @@ body{
     height: 110px;
     left: 370px;
     top: 66px;
+  }
+
+
+  /* FEATURES */
+
+
+  .features::before{
+    width: 385px;
+    left: 383px;
+  }
+
+  .features::after{
+    width: 384px;
+  }
+
+
+  .btn-content{
+    padding: 1px 20px 30px 420px;
   }
 }
 
@@ -333,6 +575,67 @@ body{
     left: 540px;
     top: 284px;
   }
+
+
+
+
+  /* FEATURES */
+
+
+
+  .features::before{
+    width: 551px;
+    height: 342px;
+    left: 549px;
+    background-image: url(../img/desktop-edge.png);
+  }
+
+  .features-content{
+    padding: 60px 629px 130px 72px;
+  }
+
+
+  .features-content__heading{
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .features-content__text{
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 350px;
+  }
+
+  .features::after{
+    width: 551px;
+    height: 342px;
+    top: 341px;
+    background-image: url(../img/desktop-idish.png);
+  }
+
+  .btn-content{
+    padding: 0px 72px 63px 629px;
+  }
+
+
+  /* JOBS */
+
+
+  .jobs-one{
+    background-image: url(../img/desktop-gilos.png);
+  }
+
+  .jobs-one__content{
+    padding: 280px 120px 40px 120px;
+  }
+
+  .jobs-two{
+    background-image: url(../img/desktop-olma.png);
+  }
+
+  .jobs-two__content{
+    padding: 280px 120px 40px 120px;
+  }
 }
 
 @media only screen and (min-width: 1316px) {
@@ -340,6 +643,35 @@ body{
   .creative-section__heading::before{
     left: 642px;
     top: 284px;
+  }
+
+  /* FEATURES */
+
+
+  .features::before{
+    width: 657px;
+    left: 659px;
+    height: 422px;
+  }
+
+  .features-content__heading{
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .features-content__text{
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features::after{
+    width: 657px;
+    height: 422px;
+    top: 421px;
+  }
+
+  .btn-content{
+    padding: 76px 73px 56px 743px
   }
 
 }
@@ -350,6 +682,18 @@ body{
   .creative-section__heading::before{
     left: 700px;
     top: 284px;
+  }
+
+
+  /* FEATURES */
+
+  .features::before{
+    width: 719px;
+    left: 721px;
+  }
+
+  .features::after{
+    width:719px;
   }
 
 }
