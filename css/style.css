@@ -164,42 +164,44 @@ body{
 
 /* FEATURES */
 
-.features{
-  position: relative;
-  z-index: 1;
+.features-one{
+  /* position: relative; */
+  /* z-index: 1; */
 }
 
-
-.features-img{
-  background-size: cover;
-  margin-bottom: 64px;
-}
-
-.features-content{
-  margin-top: 376px;
-  margin-bottom: 64px;
-}
-
-.features::before{
-  position: absolute;
+.features-one::before{
+  display: block;
   content: "";
-  width: 375px;
+  width: 100%;
   height: 312px;
   background-image: url(../img/eage.png);
   background-repeat: no-repeat;
   background-size: cover;
-  top: -377px;
+  left: 0px;
+  top: 0px;
 }
 
-.features::after{
-  position: absolute;
+.features-two{
+  position: relative;
+  z-index: 1;
+}
+
+.features-two::before{
+  display: block;
   content: "";
-  width: 375px;
+  width: 100%;
   height: 312px;
   background-image: url(../img/idish.png);
   background-repeat: no-repeat;
   background-size: cover;
-  top: 340px;
+  left: 0px;
+  top: 0px;
+}
+
+
+.features-content{
+  padding: 41px 24px 64px 24px;
+  text-align: center;
 }
 
 .features-content__heading{
@@ -212,7 +214,6 @@ body{
   margin-bottom: 24px;
 }
 
-
 .features-content__text{
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
@@ -221,7 +222,7 @@ body{
   letter-spacing: -0.128571px;
   color: #808397;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .features-content__link{
@@ -233,12 +234,10 @@ body{
   text-transform: uppercase;
   color: #24303E;
   text-decoration: none;
-  margin-left: 110px;
 }
 
 .features-content__link::after{
   position: absolute;
-  z-index: -1;
   content: "";
   width: 137px;
   height: 10px;
@@ -246,9 +245,18 @@ body{
   mix-blend-mode: normal;
   opacity: 0.25;
   border-radius: 28px;
-  left: -9px;
+  left: -10px;
   top: 10px;
 }
+
+.one-link:hover::after{
+  background: #FAD400;
+}
+
+.two-link:hover::after{
+  background: #FE7766;
+}
+
 
 
 /* JOBS */
@@ -381,82 +389,56 @@ body{
 
   /* FEATURES */
 
+  .features-one{
+    display: flex;
+    flex-direction: row-reverse;
+    /* width: 50%; */
+  }
+
+  .features-two{
+    display: flex;
+  }
+
+  .features-one::before{
+    width: 50%;
+    left: 50%;
+
+  }
 
   .features-content{
-    margin-top: 0;
-    padding: 22px 200px 42px 30px;
+    flex-shrink: 0;
+    padding-top: 50px;
+    width: 50%;
+    padding-bottom: 40px;
     text-align: left;
+    margin-left: 0;
   }
 
   .features-content__heading{
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 28px;
+    line-height: 32px;
     text-align: left;
+    margin-bottom: 10px;
   }
 
   .features-content__text{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 23px;
     text-align: left;
-    max-width: 250px;
-    margin-bottom: 18px;
-
   }
 
 
-  .features::before{
-    position: absolute;
-    content: "";
-    width: 330px;
-    height: 250px;
-    background-image: url(../img/eage.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 329px;
-    top: 0px;
-  }
 
-  .features-content__link{
-    margin-left: 7px;
+  .features-two::before{
+    width: 50%;
+    left: 0%;
   }
 
   .btn-content{
-    margin-top: 0;
-    padding: 1px 20px 4px 342px;
-    text-align: left;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 0;
   }
-
-  .btn-heading{
-    font-size: 20px;
-    line-height: 26px;
-    text-align: left;
-  }
-
-  .btn-text{
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    max-width: 250px;
-    margin-bottom: 18px;
-  }
-
-
-  .features::after{
-    position: absolute;
-    content: "";
-    width: 330px;
-    height: 250px;
-    background-image: url(../img/idish.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 1px;
-    top: 251px;
-  }
-
-  .features-content{
-    margin-bottom: 0;
-  }
-
 
 
 
@@ -523,19 +505,6 @@ body{
   /* FEATURES */
 
 
-  .features::before{
-    width: 385px;
-    left: 383px;
-  }
-
-  .features::after{
-    width: 384px;
-  }
-
-
-  .btn-content{
-    padding: 1px 20px 30px 420px;
-  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -583,39 +552,6 @@ body{
 
 
 
-  .features::before{
-    width: 551px;
-    height: 342px;
-    left: 549px;
-    background-image: url(../img/desktop-edge.png);
-  }
-
-  .features-content{
-    padding: 60px 629px 130px 72px;
-  }
-
-
-  .features-content__heading{
-    font-size: 26px;
-    line-height: 28px;
-  }
-
-  .features-content__text{
-    font-size: 18px;
-    line-height: 30px;
-    max-width: 350px;
-  }
-
-  .features::after{
-    width: 551px;
-    height: 342px;
-    top: 341px;
-    background-image: url(../img/desktop-idish.png);
-  }
-
-  .btn-content{
-    padding: 0px 72px 63px 629px;
-  }
 
 
   /* JOBS */
@@ -648,31 +584,6 @@ body{
   /* FEATURES */
 
 
-  .features::before{
-    width: 657px;
-    left: 659px;
-    height: 422px;
-  }
-
-  .features-content__heading{
-    font-size: 40px;
-    line-height: 49px;
-  }
-
-  .features-content__text{
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .features::after{
-    width: 657px;
-    height: 422px;
-    top: 421px;
-  }
-
-  .btn-content{
-    padding: 76px 73px 56px 743px
-  }
 
 }
 
@@ -686,15 +597,6 @@ body{
 
 
   /* FEATURES */
-
-  .features::before{
-    width: 719px;
-    left: 721px;
-  }
-
-  .features::after{
-    width:719px;
-  }
 
 }
 
