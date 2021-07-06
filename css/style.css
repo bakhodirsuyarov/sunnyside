@@ -29,7 +29,7 @@ body{
 
 
 .full-section{
-  background-image: url(../img/hero-bg.png);
+  background-image: url(../img/hero-mobil-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -136,8 +136,6 @@ body{
 
 
 .creative-section__heading{
-  position: relative;
-  z-index: 1;
   font-size: 40px;
   line-height: 49px;
   text-align: center;
@@ -148,17 +146,7 @@ body{
 }
 
 
-.creative-section__heading::before{
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 108px;
-  background-image: url(../img/strelka.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 175px;
-  top: 159px;
-}
+
 
 
 
