@@ -267,6 +267,7 @@ body{
 }
 
 .jobs-one__content-text{
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   line-height: 27px;
   text-align: center;
@@ -296,6 +297,7 @@ body{
 }
 
 .jobs-two__content-text{
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   line-height: 27px;
   text-align: center;
@@ -466,6 +468,7 @@ body{
   }
 
   .jobs-one__content-text{
+
     font-size: 16px;
     line-height: 22px;
     margin: 0;
