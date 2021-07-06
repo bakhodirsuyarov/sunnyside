@@ -623,6 +623,30 @@ body{
 
   /* FEATURES */
 
+  .features-content{
+    padding: 150px 45px 87px 150px;
+  }
+
+  .features-one::before{
+    height: 484px;
+  }
+
+  .features-two::before{
+    height: 484px;
+  }
+
+  .features-content__heading{
+    width: 400px;
+  }
+
+  .features-content__text{
+    width: 400px;
+  }
+
+  .one-link{
+    width: 450px;
+  }
+
 }
 
 
