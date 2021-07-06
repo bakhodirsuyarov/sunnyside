@@ -152,10 +152,6 @@ body{
 
 /* FEATURES */
 
-.features-one{
-  /* position: relative; */
-  /* z-index: 1; */
-}
 
 .features-one::before{
   display: block;
@@ -538,8 +534,26 @@ body{
 
   /* FEATURES */
 
+  .features-content{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 80px;
 
+  }
 
+  .features-content::before{
+    width: 100%;
+  }
+
+  .features-content__heading{
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .features-content__text{
+    font-size: 18px;
+    line-height: 30px;
+  }
 
 
   /* JOBS */
