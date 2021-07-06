@@ -234,7 +234,7 @@ body{
 }
 
 .one-link:hover::after{
-  background: #FAD400;
+  background: blue;
 }
 
 .two-link:hover::after{
@@ -358,6 +358,11 @@ body{
     color: #24303E;
     background: #FFFFFF;
     padding: 10px 20px;
+  }
+
+  .btn-link:hover{
+    color: #FFFFFF;
+    background-color: darkturquoise;
   }
 
   .creative-section__heading::before{
@@ -524,6 +529,11 @@ body{
     height: 33px;
   }
 
+  .nav-section__item:not(:last-child){
+    margin-right: 47px;
+  }
+
+
 
   .nav-section__link{
     font-size: 18px;
@@ -531,6 +541,7 @@ body{
 
   .btn-link{
     font-size: 15px;
+    padding: 15px 30px;
   }
 
   .creative-section__heading{
