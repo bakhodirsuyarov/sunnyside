@@ -86,8 +86,7 @@ body{
 
 .nav-section__list{
   position: relative;
-  z-index: 1;
-  z-index: 1;
+  /* z-index: 1; */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -99,13 +98,13 @@ body{
 .nav-section__list::before{
   position: absolute;
   content: "";
-  width: 10px;
+  width: 6%;
   height: 10px;
   border-bottom: 30px solid white;
   border-left: 30px solid transparent;
-  background-size: cover;
-  left: 297px;
-  top: -30px;
+  background-size: contain;
+  left: 90.8%;
+  top: -9%;
 }
 
 .nav-section__item{
