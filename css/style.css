@@ -312,8 +312,9 @@ body{
 
 .client{
   padding-top: 64px;
-  padding-bottom: 86px;
+  /* padding-bottom: 86px; */
 }
+
 
 .client-section{
   text-align: center;
@@ -333,6 +334,7 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 86px;
 }
 
 .client-section__item:not(:last-child){
@@ -373,6 +375,128 @@ body{
   color: #A7AAAD;
   margin: 0;
 }
+
+.client-img{
+  width: 100%;
+  height: 380px;
+}
+
+.client-tablet__img{
+  display: none;
+}
+
+.client-desktop__img{
+  display: none;
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+  background: #90D4C6;
+}
+
+.footer-section{
+  padding: 64px 39px 80px 39px;
+  text-align: center;
+}
+
+.footer-img{
+  margin-bottom: 40px;
+}
+
+
+.footer-nav__list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+.footer-nav__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.footer-nav__item{
+  list-style: none;
+
+}
+
+.footer-nav__link{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  color: #458D7E;
+}
+
+.footer-nav__link:hover{
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+
+.footer-social__list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-social__item{
+  list-style: none;
+}
+
+.footer-social__link{
+  text-decoration: none;
+}
+
+.facebook{
+  fill: #2C7566;
+}
+
+.facebook:hover{
+  fill: #FFFFFF;
+  transition: 0.5s;
+}
+
+.instagram{
+  fill: #2C7566;
+}
+
+.instagram:hover{
+  fill: #FFFFFF;
+  transition: 0.5s;
+}
+
+.twitter{
+  fill: #2C7566;
+}
+
+.twitter:hover{
+  fill: #FFFFFF;
+  transition: 0.5s;
+}
+.pinterest{
+  fill: #2C7566;
+}
+
+.pinterest:hover{
+  fill: #FFFFFF;
+  transition: 0.5s;
+}
+.footer-social__item:not(:last-child){
+  margin-right: 20px;
+}
+
+
 
 
 
@@ -575,7 +699,6 @@ body{
 
 
 
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -622,6 +745,15 @@ body{
     font-size: 12px;
   }
 
+  .client-img{
+    display: none;
+  }
+
+  .client-tablet__img{
+    display: block;
+    width: 100%;
+    height: 292px;
+  }
 
 }
 
@@ -744,6 +876,20 @@ body{
 }
 
 
+@media only screen and (min-width: 1316px) {
+
+  .client-tablet__img{
+    display: none;
+  }
+
+  .client-desktop__img{
+    width: 100%;
+    display: block;
+  }
+
+}
+
+
 
 @media only screen  and (min-width: 1440px){
 
@@ -781,7 +927,7 @@ body{
 
   .client{
     padding-top: 160px;
-    padding-bottom: 160px;
+    padding-bottom: 0px;
   }
 
   .client-section__item:not(:last-child){
