@@ -424,6 +424,22 @@ body{
     margin-right: 0;
   }
 
+  .creative-section__heading{
+    position: relative;
+    z-index: 1;
+  }
+
+  .creative-section__heading::before{
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 110px;
+    background-image: url(../img/strelka.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 48%;
+  }
+
 
 
   /* JOBS */
@@ -479,10 +495,8 @@ body{
 @media only screen and (min-width: 768px) {
 
   .creative-section__heading::before{
-    width: 30px;
+    width: 35px;
     height: 110px;
-    left: 370px;
-    top: 66px;
   }
 
 
@@ -525,8 +539,7 @@ body{
   }
 
   .creative-section__heading::before{
-    left: 540px;
-    top: 284px;
+    top: 272px;
   }
 
 
@@ -536,9 +549,17 @@ body{
 
   .features-content{
     padding-top: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 52px;
     padding-left: 80px;
 
+  }
+
+  .features-one::before{
+    height: 369px;
+  }
+
+  .features-two::before{
+    height: 369px;
   }
 
   .features-content::before{
@@ -578,10 +599,6 @@ body{
 
 @media only screen and (min-width: 1316px) {
 
-  .creative-section__heading::before{
-    left: 642px;
-    top: 284px;
-  }
 
   /* FEATURES */
 
@@ -591,11 +608,6 @@ body{
 
 
 @media only screen  and (min-width: 1440px){
-
-  .creative-section__heading::before{
-    left: 700px;
-    top: 284px;
-  }
 
 
   /* FEATURES */
